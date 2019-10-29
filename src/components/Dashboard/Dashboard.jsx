@@ -16,7 +16,7 @@ class Dashboard extends Component {
   };
 
   componentDidMount() {
-    if (localStorage.length)
+    if (localStorage.transactions || localStorage.balance)
       this.setState({
         transactions: JSON.parse(localStorage.getItem('transactions')),
         balance: JSON.parse(localStorage.getItem('balance')),
