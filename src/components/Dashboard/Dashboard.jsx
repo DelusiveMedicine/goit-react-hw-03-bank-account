@@ -16,18 +16,18 @@ class Dashboard extends Component {
   };
 
   componentDidMount() {
-    console.log(JSON.parse(localStorage.transactions));
-    // if (localStorage.length)
-    //   this.setState({
-    //     transactions: localStorage.getItem('tansactions'),
-    //     balance: Number(localStorage.getItem('balance')),
-    //   });
+    if (localStorage.length)
+      this.setState({
+        transactions: JSON.parse(localStorage.getItem('transactions')),
+        balance: JSON.parse(localStorage.getItem('balance')),
+      });
   }
 
   componentDidUpdate() {
-    const obj = this.state;
-    const keys = Object.keys(obj);
-    keys.forEach(key => localStorage.setItem(key, JSON.stringify(obj[key])));
+    const keys = Object.keys(this.state);
+    return keys.forEach(key =>
+      localStorage.setItem(key, JSON.stringify(this.state[key])),
+    );
   }
 
   onDeposit = amount => {
