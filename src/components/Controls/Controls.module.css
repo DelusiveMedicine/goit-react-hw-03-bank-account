@@ -1,0 +1,60 @@
+.controls {
+  margin-bottom: 38px;
+  padding: 56px 0 54px;
+  background-color: #062c56;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.controls input {
+  width: 240px;
+  padding: 0 10px;
+  border-style: none;
+  border-radius: 4px;
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.controls button {
+  padding: 0;
+  width: 186px;
+  height: 40px;
+  margin-right: 20px;
+  background-color: #3884ff;
+  border-style: none;
+  border-radius: 3px;
+  color: #f2efec;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+.controls button:last-of-type {
+  margin: 0;
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+    /* IE6-IE8 */ url('../../fonts/roboto-v20-latin-regular.woff2')
+      format('woff2'),
+    /* Super Modern Browsers */ url('../../fonts/roboto-v20-latin-regular.woff')
+      format('woff');
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    /* IE6-IE8 */ url('../../fonts/roboto-v20-latin-700.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../../fonts/roboto-v20-latin-700.woff')
+      format('woff');
+}
